@@ -33,10 +33,7 @@ canvas.addEventListener("mousedown", (e) => {
     x: e.clientX,
     y: e.clientY,
   }
-  // beginPath({
-  //   x: e.clientX,
-  //   y: e.clientY,
-  // });
+
   socket.emit("beginPath",data);
 });
 
@@ -48,12 +45,6 @@ canvas.addEventListener("mousemove", (e) => {
       color: eraserFlag ? eraserColor : penColor,
       width: eraserFlag ? eraserWidth : penWidth,
     }
-    // drawStroke({
-    //   x: e.clientX,
-    //   y: e.clientY,
-    //   color: eraserFlag ? eraserColor : penColor,
-    //   width: eraserFlag ? eraserWidth : penWidth,
-    // });
     socket.emit("drawStroke",data);
   }
 });
@@ -72,10 +63,7 @@ undo.addEventListener("click", (e) => {
     trackVal: track,
     undoRedoTracker,
   }
-  // undoRedoCanvas({
-  //   trackVal: track,
-  //   undoRedoTracker,
-  // });
+ 
   socket.emit("redoUndo",data);
 });
 
@@ -86,10 +74,7 @@ redo.addEventListener("click", (e) => {
     trackVal: track,
     undoRedoTracker,
   }
-  // undoRedoCanvas({
-  //   trackVal: track,
-  //   undoRedoTracker,
-  // });
+
   socket.emit("redoUndo",data);
 });
 

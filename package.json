@@ -4,5 +4,28 @@
     "express": "^4.18.1",
     "nodemon": "^2.0.16",
     "socket.io": "^4.5.1"
-  }
+  },
+  "name": "openboard",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addy2001vasisth/myOpenBoad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addy2001vasisth/myOpenBoad/issues"
+  },
+  "homepage": "https://github.com/addy2001vasisth/myOpenBoad#readme",
+  "description": ""
 }
